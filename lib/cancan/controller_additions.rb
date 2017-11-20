@@ -388,9 +388,7 @@ if defined? ActionController::Base
   ActionController::Base.class_eval do
     include CanCan::ControllerAdditions
   end
-end
-
-if defined? ActionController::API
+elsif defined? ActionController::API
   ActionController::API.class_eval do
     include CanCan::ControllerAdditions
   end
